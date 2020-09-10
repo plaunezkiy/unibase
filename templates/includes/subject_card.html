@@ -1,0 +1,10 @@
+<div class="col mb-4">
+    <div class="card" style="width: 18rem; cursor: pointer"
+         onclick="location.href='{% url 'subject' subject.title|slugify %}'">
+        <img src="{{ subject.image_src }}" class="card-img-top" alt="{{ course.title }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ subject.title }}</h5>
+            <p class="card-text">{{ subject.description }}</p>
+        </div>
+    </div>
+</div>
